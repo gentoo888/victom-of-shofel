@@ -1,0 +1,16 @@
+[package]
+name = "victom-of-shofel"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# For system calls and ioctl management
+nix = { version = "0.31.3", features = ["ioctl", "fs"] }
+
+# For converting the byte indexes into structs safely
+zerocopy = { version = "0.8", features = ["derive"] }
+
+# For logging
+log = "0.4"
+env_logger = "0.11"
+
